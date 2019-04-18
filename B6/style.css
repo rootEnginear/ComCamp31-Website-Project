@@ -1,0 +1,57 @@
+.holder {
+  width: 300px;
+  margin: auto;
+}
+.arrow {
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	transform: translate(-50%);
+	outline: none;
+	cursor: pointer;
+  top: 40px;
+}
+#button {
+  left: -120px;
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  position: relative;
+  top: 140px;
+}
+#roulette {
+  width: 286px;
+  height: 286px;
+  transition: transform 3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+._MXu {
+	fill: #465a81
+}
+.green {
+	fill: #96bb00
+}
+
+.blue {
+	fill: #0989e3
+}
+
+.yellow {
+	fill: #ffe643
+}
+
+.red{
+  fill: rgb(251, 96, 96)
+}
+
+.orange{
+fill : orange
+}
+body {
+  background-image: url("Background(Edit)2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  font-size: 50px;
+ font-family:"JasmineUPC";
+}

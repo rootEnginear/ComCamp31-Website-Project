@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>💡 Lightouts ⚫</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="con">
+    <h1>💡 Lightouts ⚫</h1>
+    <p>กติกา: เมื่อกดปุ่มที่ไฟที่ติดอยู่ ไฟรอบๆ ปุ่มนั้นจากติดจะกลายเป็นดับ จากดับจะกลายเป็นติด เป้าหมายคือ ทำให้ไฟดับทุกดวงให้ได้</p>
+    <hr>
+    <div id="gameTable">
+      <button data-y="0" data-x="0" onclick="lightToggle(this)">&nbsp;</button>
+      <button data-y="0" data-x="1" onclick="lightToggle(this)">&nbsp;</button>
+      <button data-y="0" data-x="2" onclick="lightToggle(this)">&nbsp;</button>
+      <button data-y="1" data-x="0" onclick="lightToggle(this)">&nbsp;</button>
+      <button data-y="1" data-x="1" onclick="lightToggle(this)">&nbsp;</button>
+      <button data-y="1" data-x="2" onclick="lightToggle(this)">&nbsp;</button>
+      <button data-y="2" data-x="0" onclick="lightToggle(this)">&nbsp;</button>
+      <button data-y="2" data-x="1" onclick="lightToggle(this)">&nbsp;</button>
+      <button data-y="2" data-x="2" onclick="lightToggle(this)">&nbsp;</button>
+    </div>
+    <div id="winbox" style="display:none">
+      <h2>🎉 เย้! คุณชนะแล้ว! 😄</h2>
+      <button onclick="restart()">🔄 ลองใหม่</button>
+    </div>
+  </div>
+  
+  <script defer src="script.js"></script>
+</body>
+</html>

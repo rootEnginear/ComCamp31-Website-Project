@@ -1,0 +1,5 @@
+Blue
+#56a0f2
+Orange
+#ffa500
+white

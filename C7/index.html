@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>🌡Survival of Egypt⛱</title>
+  <link rel="stylesheet" href="common.css">
+  <style>
+    #title {
+      color: rgb(236, 180, 26)
+    }
+
+    #buttonstart {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="title">📣 ยินดีต้อนรับเข้าสู่ การผจญภัยที่ไม่รู้ว่าจะสิ้นสุดเมื่อไหร่ !</h1>
+  <img class="center" id="A" src="title.jpg">
+  <button id="buttonstart" class="center bigtext" onclick="p2()">Start Game ...</button>
+  <script>
+    var name = prompt("กรุณาใส่ชื่อผู้เล่น");
+    document.querySelector("#title").innerText = "📣 ยินดีต้อนรับ"+name+"เข้าสู่ การผจญภัยที่ไม่รู้ว่าจะสิ้นสุดเมื่อไหร่ !";
+
+    function p2() {
+      window.location.href = "C7 p2.html";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LungPrayadcamp</title>
+    <style>
+        body {
+            background-color: #FFE7BA;
+            margin-left: 10%;
+        }
+        #A{
+            background: #8B3A3A;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="A">รายละเอียดการสมัคร</h1>
+    <p>ชื่อ:&nbsp;&nbsp;&nbsp;<input oninput="reset(this)" type="text" name="name" size="25"> </p>
+    <p>นามสกุล:&nbsp;&nbsp;&nbsp;<input  oninput="reset(this)" type="text" name="name" size="25"> </p>
+    <p>ชื่อเล่น:&nbsp;&nbsp;&nbsp;<input  oninput="reset(this)" type="text" name="name" size="25"> </p>
+    <p>อายุ:&nbsp;&nbsp;&nbsp;<input  oninput="reset(this)" type="text" name="name" size="25"> </p>
+    <p>สัญชาติ:&nbsp;&nbsp;&nbsp;<input  oninput="reset(this)" type="text" name="name" size="25"> </p>
+    <p>ศาสนา:&nbsp;&nbsp;&nbsp;<input  oninput="reset(this)" type="text" name="name" size="25"> </p>
+    <p>หากคุณเป็นสว.สิ่งแรกที่คุณทำคืออะไร?:</p>
+    <textarea  oninput="reset(this)" name="answer" class="answer" cols="90%" rows="10"></textarea>
+    <p>ถ้าเกิดเหตุการณ์คอรัปชั่นในสภาขึ้นและฝ่ายที่มีอำนาจมากกว่าเป็นฝ่ายผิด
+        ท่านจะเลือกเข้าข้างคนถูกหรือคนผิดเพราะเหตุใด?</p>
+    <textarea  oninput="reset(this)" name="answer" class="answer" cols="90%" rows="10"></textarea>
+    <p>จงแต่งเรื่องสั้นไม่เกิน 5 บรรทัดจากคำที่กำหนดให้ <br>
+        นายก&nbsp;&nbsp;&nbsp;นาฬิกา&nbsp;&nbsp;&nbsp;เรือดำน้ำ&nbsp;&nbsp;&nbsp;เปลือกกล้วย <br>
+        ห่วงยาง&nbsp;&nbsp;&nbsp;4.0&nbsp;&nbsp;&nbsp;ฮั่นแน่&nbsp;&nbsp;&nbsp;มด</p>
+    <textarea  oninput="reset(this)" name="answer" class="answer" cols="90%" rows="10"></textarea><br>
+    <button onclick="check()">ส่งใบสมัคร</button>
+
+    <script>
+    function check(){
+        var status = 0;
+        var input = document.querySelectorAll("input");
+        for (var i=0; i<=5; i++)
+        {
+            if (input[i].value == "") {
+                status = 1;
+                input[i].style.backgroundColor = "rgb(240, 81, 81)";
+            }
+        }
+        var textarea = document.querySelectorAll("textarea");
+        for (var i=0; i<=2; i++)
+        {
+            if (textarea[i].value == "") {
+                status = 1;
+                textarea[i].style.backgroundColor = "rgb(240, 81, 81)";
+            }
+        }
+        if (status == 0) {
+            window.location = "End.html";
+        }
+    }
+    function reset(input){
+        input.style.backgroundColor = "white";
+    }
+    </script>
+</body>
+
+</html>

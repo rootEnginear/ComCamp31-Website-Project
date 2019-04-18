@@ -1,0 +1,63 @@
+#ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(37, 35, 54, 0.603);
+  }
+  
+  #li {
+    float: left;
+  }
+  
+  #lia {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    font-family: 'FreesiaUPC';
+    background-color: #FFF;
+    width: 50%;
+  }
+
+  .card :hover {
+    box-shadow: 0 8px 16px 0;  
+  }
+
+  .card-content {
+    
+  }
+
+  .container {
+    
+    
+  }
+
+  body {
+    font-family: 'Gill Sans', sans-serif;
+    margin: 0;
+    background-color: rgb(198, 228, 255);
+  }
+
+  .container {
+    padding-left: 100px;
+    font-family: 'FreesiaUPC';
+  }
+
+  .heady {
+    font-size: 24px;
+  }
+
+  p {
+      font-size: 24px;
+  }
+
+  label {
+    font-size: 24px;
+  }

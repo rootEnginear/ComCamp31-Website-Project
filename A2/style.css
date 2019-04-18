@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "SB - Modern";
+  src: url("SB - Modern.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "SB - Modern", sans-serif;
+  font-size: 2rem;
+}
+
+.header {
+  width: 100vw;
+  height: auto;
+  font-size: 2em;
+  text-align: center;
+  color: honeydew;
+  background-color: rgb(231, 170, 1);
+}
+.main {
+  background-image: url("a1.png");
+  background-size: cover;
+  padding: 2em;
+  height: 100vh;
+  display: flex;
+}
+.main-con {
+  margin: auto;
+  color: #efefef;
+  background-color: rgba(88, 88, 88, 0.23);
+}
+.content {
+  padding: 1em;
+  text-align: center;
+  background-color: rgb(230, 201, 74);
+}
+
+.person {
+  border: 1px solid #474747;
+  margin: auto;
+  padding: 20px;
+  width: auto;
+  color: #efefef;
+  background-color: rgba(88, 88, 88, 0.23);
+  font-size: 25px;
+  border-radius: 25px;
+}
+
+.img {
+  width: 50vw;
+  border: 2px solid #474747;
+}
+
+button {
+  padding: 5px;
+  color: white;
+  background-color: rgb(0, 116, 0);
+  box-shadow: none;
+}
+ul {
+  list-style: none;
+}
+
+.comment {
+  padding: 10px;
+  background-color: rgb(104, 71, 0);
+  color: burlywood;
+  font-size: 1.25em;
+  border-bottom: 1px solid white;
+}
+
+.comment:nth-child(1) {
+  margin-top: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.black {
+  color: black;
+}
+.grey {
+  color: rgb(75, 74, 74);
+}
+
+li::before {
+  content: "💕";
+}

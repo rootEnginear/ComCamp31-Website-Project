@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        .all {
+            background-color: rgb(219, 213, 204)
+        }
+
+        .textbox {
+            border: 2px black solid;
+            border-radius: 2%;
+
+        }
+
+        .textbox2 {
+            border: 2px black solid;
+            border-radius: 2%;
+
+        }
+
+        .textbox3 {
+            border: 2px black solid;
+            border-radius: 2%;
+
+        }
+
+        .textbox4 {
+            border: 2px black solid;
+            border-radius: 2%;
+
+        }
+
+        .day {
+            text-align: center;
+
+        }
+    .a{
+font-size: 20px;
+margin: 10px;
+text-align: center;
+
+    }
+    body{
+        background:url("gg.jfif");
+    }
+    </style>
+</head>
+
+<body >
+    <h1 class="day">DAYS</h1>
+    <hr>
+    <button class="a" onclick="monday()">monday</button>
+    <button class="a" onclick="tuesday()">tuesday</button>
+    <button class="a" onclick="wednesday()">wednesday</button>
+    <button class="a"onclick="thursday()">thursday</button>
+    <div></div>
+    <button class="a" onclick="friday()">friday</button>
+    <button class="a" onclick="saturday()">saturday</button>
+    <button class="a" onclick="sunday()">sunday </button>
+    <hr>
+    <h2 class="textbox">ความรัก </h2>
+    <h2 class="textbox2">การงาน </h2>
+    <h2 class="textbox3">การเงิน </h2>
+    <h2 class="textbox4">สุขภาพ </h2>
+
+
+
+    <script>
+        function monday() {
+            document.querySelector(".textbox").innerText = "ความรัก ชีวิตของคนเกิดวันจันทร์ในช่วงนี้จะพัวพันกับเพศตรงข้าม อาจมีคนกำลังสนใจคุณอยู่ด้วยล่ะ ";
+            document.querySelector(".textbox2").innerText = "การงาน คุณมีความวิตกกังวลบางอย่างเกี่ยวกับอนาคต";
+            document.querySelector(".textbox3").innerText = "การเงิน ช่วงนี้มีรายจ่ายออกไปมาก ประหยัดๆไว้สิ!";
+            document.querySelector(".textbox4").innerText = "สุขภาพ ป่วยออดๆแอดๆ ดูแลรักษาสุขภาพดีๆล่ะ!";
+        } function tuesday() {
+            document.querySelector(".textbox").innerText = "ความรัก ยังดูๆ อยู่มากกว่าและยังไม่ตัดสินใจในเรื่องของความรัก ช่วงนี้ฮอต ร้อนแรง ค่อยๆตัดสินใจ อาจเจอคนใหม่ที่ดีกว่า";
+
+            document.querySelector(".textbox2").innerText = "การงาน ระวังเอกสารสัญญาส่งผลต่อความล่าช้าทางด้านการงาน การติดต่อเจรจาแบบลับๆ จะก่อให้เกิดความสำเร็จที่ดีขึ้น";
+            document.querySelector(".textbox3").innerText = "การเงิน มีโชคจะได้เงินเข้ามา แม้ต้องจ่ายออกไปอย่างรวดเร็ว แต่ก็หาเข้ามาได้เพิ่มเติมเสมอ";
+            document.querySelector(".textbox4").innerText = "สุขภาพ ไม่มีปัญหาแต่ให้ระวังเรื่องความปลอดภัยในชีวิตประจำวันให้ มาก";
+        }
+        function wednesday() {
+            document.querySelector(".textbox").innerText = " ความรัก ไม่ค่อยมีเวลาในเรื่องของความรัก เพราะการงานยังค่อนข้างเยอะมากเป็นพิเศษในช่วงนี้";
+            document.querySelector(".textbox2").innerText = "การงาน พบเจออุปสรรคด้านการงานบ้างเป็นธรรมดา แต่จะสามารถสร้างความสำเร็จ สู้ๆเข้าล่ะแล้วจะเจอผลกำไรที่ดีรอคุณอยู่";
+            document.querySelector(".textbox3").innerText = "การเงิน หาเข้ามาได้เรื่อยๆ มีโชคในช่วงนี้ เปรียบเหมือนน้ำซึมบ่อทรายนั่นเอง";
+            document.querySelector(".textbox4").innerText = "";
+        }
+        function thursday() {
+            document.querySelector(".textbox").innerText = "ความรัก คนโสดยังไม่กล้าเปิดความความในใจ ยังคงต้องโสดต่อไปแบบแอบรักแอบชอบ คนที่มีคนคุย คนคุยอาจเบื่อคุณแล้วล่ะ แนะนำว่าอย่าพึ่งรีบร้อนในช่วงนี้ มีโอกาสนกสูง คนมีคู่ ระวังคนรักนอกใจแอบคบซ้อน";
+            document.querySelector(".textbox2").innerText = "การงาน การงานก้าวหน้า มีชื่อเสียง มีความสำเร็จที่รอคอย ได้เริ่มต้นอาชีพใหม่";
+            document.querySelector(".textbox3").innerText = "การเงิน ไม่คล่อง รายจ่ายมากกว่ารายรับ";
+            document.querySelector(".textbox4").innerText = "สุขภาพ เจ็บป่วยบ้างเล็กน้อย แต่ก็จะผ่านไปได้ด้วยดี";
+        }
+        function friday() {
+            document.querySelector(".textbox").innerText = "ความรัก คนโสดอยู่ในสถานะแอบชอบ คนมีคู่ สงบสุข หัดเติมความหวานกันบ้างนะ!";
+            document.querySelector(".textbox2").innerText = "การงาน ก้าวหน้า สำเร็จทุกประการ";
+
+            document.querySelector(".textbox3").innerText = "การเงิน คล่องตัว จะมีโชคลาภเข้ามา";
+            document.querySelector(".textbox4").innerText = "สุขภาพ ระวังโรคทางกระเพาะอาหาร กินข้าวให้ตรงเวลาด้วยล่ะ เป็นห่วงน้าาาา";
+        }
+        function saturday() {
+            
+            document.querySelector(".textbox").innerText = "ความรัก คนโสดได้พบคนที่ถูกใจ คนมีคู่จะมีความเข้าใจกันมากขึ้น ";
+            document.querySelector(".textbox2").innerText = "การงาน ทำงานด้วยความละเอียดรอบคอบ สามารถสร้างผลงานได้ดีขึ้นอย่างต่อเนื่อง";
+            document.querySelector(".textbox3").innerText = "การเงิน มีความกังวลใจแต่ก็หาเข้ามาได้ทุกที เป็นอย่างนี้สลับกันไปในช่วงนี้นั่นเอง";
+            document.querySelector(".textbox4").innerText = "สุขภาพ ดูแลสุขภาพดวงตา สายตามีปัญหา";
+
+        }
+        function sunday() {
+            document.querySelector(".textbox").innerText = "ความรัก  ยังไม่ลงตัวในเรื่องของความรัก เพราะระยะทางและเวลาที่มีให้กันไม่มากพอ";
+            document.querySelector(".textbox2").innerText = "การงาน  มีการเดินทางติดต่องานบ่อยในช่วงนี้ พบอุปสรรคทางด้านการงานอยู่เรื่อยๆ ";
+            document.querySelector(".textbox3").innerText = "การเงิน    มีโชคจะได้เงินเข้ามาอย่างต่อเนื่อง จะสังเกตได้ว่าดวงทางด้านการเงิน หรือโชคต่างๆ ดีขึ้น";
+            document.querySelector(".textbox4").innerText = "สุขภาพ ปัญหาการเจ็บป่วย สุขภาพเสื่อมโทรม ให้ดูแลสุขภาพ และออกกำลังกายเพื่อสุขภาพที่ดี ";
+        }
+
+
+
+
+        
+    </script>
+</body>
+
+</html>

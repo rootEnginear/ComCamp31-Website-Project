@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Raleway;
+            background-color:#0B243B 
+
+        }
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn2 {
+            background-color: #585858;
+            color: white;
+            padding: 16px;
+            width: 200px;
+            font-size: 2px;
+            border: white 1px solid;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block; 
+            text-align: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+        .center {
+            text-align: center;
+          
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <h2 style="color: white; font-size: 60px; text-align: center">Show me your money</h2>
+    <p style="color: white; font-size: 30px; text-align: center">Please input your currency.</p>
+
+    <p style="color: white; font-size: 40px;" class="center">Please input your money in THB</p>
+
+    <br><br>
+    <div class="center">
+       <input style="width:200px" id="input1" type="text"> 
+
+    </div>
+     <p style="color: white; font-size: 40px;" class="center">choose your currency</p>
+    <p id="text1"></p>
+    <div class="dropdown" style="margin-left: 46.5%;">
+            <button onclick="myFunction()" class="dropbtn">Currency<i class="material-icons">menu</i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <button class="dropbtn2" onclick="calculate(31.75)">USA</button>
+                <br>
+                <button class="dropbtn2" onclick="calculate(0.28)">JAP</button>
+                <br>
+                <button class="dropbtn2" onclick="calculate(36.26)">EUR</button>
+                <br>
+                <button class="dropbtn2" onclick="calculate(4.75)">CNY</button>
+                <br>
+                <button class="dropbtn2" onclick="calculate(1)">THB</button>
+    
+            </div>
+    </div>
+        <br><br>
+       
+        <div class="center">
+            <p style="color: white; font-size: 40px; " id="output" ></p> 
+        </div>
+
+    <script>
+        function calculate(devided){
+            var num = Number(document.getElementById("input1").value);
+            num = num/devided
+            document.getElementById("output").innerText = num;
+        }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        function changetext(){
+            document.getElementById("text1").innerText = document.getElementById("input1").value;
+
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(37, 35, 54, 0.603);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    font-family: 'FreesiaUPC';
+    background-color: #FFF;
+  }
+
+  .card :hover {
+    box-shadow: 0 8px 16px 0;  
+  }
+
+  .card-content {
+    padding: 2px 16px;
+  }
+
+  .container {
+    
+    
+  }
+
+  body {
+    font-family: 'Gill Sans', sans-serif;
+    margin: 0;
+    background-color: rgb(198, 228, 255);
+  }
+
+  #dog2 {
+      margin-left: 100px;
+  }
+
+  #dog3 {
+      margin-left: 100px;
+  }
+
+  .header {
+      margin: 0;
+      background-image: url("assets/dogbg.jpg");
+      background-size: cover;
+      height: 250px;
+      padding-top: 150px;
+      color: #FFF;
+  }
+
+  h1 {
+      margin: 0;
+  }
+
+button {
+    width: 100%;
+    background-color: rgb(30, 30, 59);
+    color: #FFF;
+    border: none;
+    margin-bottom: 20px;
+    height: 50px;
+    font-family: 'FreesiaUPC';
+    font-size: 20px;
+}

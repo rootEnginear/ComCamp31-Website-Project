@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Dog</title>
+    <link rel="stylesheet" type="text/css" href="detail.css">
+</head>
+<body><br>
+        <ul id="ul">
+                <li id="li"><a id="lia" href="">Home</a></li>
+                <li id="li" style="float: right"><a id="lia" href="">Profile</a></li>
+        </ul>
+        <p style="text-align: center"><img src="assets/Golden.jpg" alt=""></p>
+        <div class="container">
+                <h1>ข้อมูลทั่วไป</h1>
+                <ul>
+                    <li class="heady">เพศ : ชาย</li>
+                    <li class="heady">อายุ : 1 ปี 9 เดือน</li>
+                    <li class="heady">ส่วนสูง : 23 นิ้ว</li>
+                    <li class="heady">น้ำหนัก : 55 ปอนด์</li>
+                </ul><br>
+                <h1>ข้อมูลส่วนตัว</h1>
+                <ul>
+                        <li class="heady">นิสัยของสุนัข : ชอบอยู่เฉยๆ กินแล้วก็นอน</li>
+                        <li class="heady">อาหารที่ชอบ : หมูปิ้ง</li>
+                        <li class="heady">กิจกรรมที่ชอบทำ : นอน</li>
+                    </ul><br>
+                <h1>ปัญหาที่เกิดขึ้น</h1>
+                <p>เนื่องจากเจ้าของต้องการสุนัขที่เล่นกับเด็กได้ แต่ซันนี่นั้นชอบนอนเฉยๆไม่เล่นกับเด็ก เจ้าของจึงต้องหาสุนัขตัวใหม่มาแล้ว</p><br>
+                <h1>การรับมือกับปัญหา</h1>
+                <p>บ้านของผู้เลี้ยงต้องเป็นบ้านที่ต้องการความสงบ ไม่เสียงดังจึงจะสามารถเลี้ยงเจ้าซันนี่ได้อย่างไม่มีปัญหา</p><br>
+                <h1>Comment</h1>
+                <div class="card" id="comment1">
+                    <div class="card-content">
+                            <h2 id="name1"></h2>
+                            <p id="content1"></p>
+                    </div>
+                </div>
+                <h3>ความคิดเห็นของคุณ</h3>
+                <label for="name">ชื่อ</label>
+                <input type="text" id="name"><br>
+                <span>ความคิดเห็น</span><br>
+                <textarea id="content" cols="30" rows="10"></textarea><br><br>
+                <button onclick="comment()">Submit</button>
+        </div>
+        <ul></ul>
+        <script>
+            function comment() {
+                var name = document.querySelector('#name').value;
+                var text = document.querySelector('#content').value;
+                document.querySelector('#name1').innerHTML = name;
+                document.querySelector('#content1').innerHTML = text;
+            }
+        </script>
+</body>
+</html>

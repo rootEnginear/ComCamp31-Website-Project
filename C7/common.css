@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bigtext {
+    font-size: 20px;
+}
+
+#buttonback {
+    position: absolute;
+    left: 0;
+}
+
+#groups {
+    position: absolute;
+    right: 0;
+}
+
+.buttonnext {
+    margin-left: 20px;
+}
+
+#container {
+  width: 900px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#story {
+  color: white;
+  text-align: center;
+}
